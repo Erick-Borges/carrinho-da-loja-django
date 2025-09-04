@@ -1,0 +1,26 @@
+
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Aula 09 - Django{% endblock %}</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Aula 09 – Django</h1>
+      <nav>
+        <a href="/">Início</a> |
+        <a href="/blog/">Blog</a> |
+        <a href="/blog/sobre">Sobre</a>
+      </nav>
+    </header>
+    <main>
+      {% block content %}{% endblock %}
+    </main>
+    <footer>
+      <small>Projeto didático • Aula 09</small>
+    </footer>
+  </body>
+</html>

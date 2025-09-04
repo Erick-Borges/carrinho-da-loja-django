@@ -1,0 +1,13 @@
+
+{% extends "base.html" %}
+{% block title %}{{ titulo }}{% endblock %}
+{% block content %}
+  <h2>{{ titulo }}</h2>
+  <p>{{ mensagem }}</p>
+
+  <ul>
+    <li><a href="/blog/algo">Sub-rota: algo</a></li>
+    <li><a href="/blog/outro">Sub-rota: outro</a></li>
+    <li><a href="/blog/post/42">Post dinâmico #42</a></li>
+  </ul>
+{% endblock %}
